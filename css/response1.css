@@ -43,6 +43,35 @@ header{
     border:none;
     color:white;
 }
+.m-content{
+    position:fixed;
+    top:0;
+    left:0;
+    width:90%;
+    height:100%;
+    background-color:white;
+}
+.m-content h2{
+    margin:auto;
+    width:150px;
+    /* border:1px solid black; */
+    margin-top:50px;
+}
+.m-content h2 a{
+    display:block;
+    width:100%;
+}
+.m-content h2 a img{
+    width:100%;
+}
+.m-close{
+    position:absolute;
+    top:50px;
+    right:20px;
+    background-color:transparent;
+    border:none;
+    font-size:1.2em;
+}
 #m-logo{
     width:150px;
     /* border:1px solid black; */
