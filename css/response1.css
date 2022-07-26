@@ -161,6 +161,25 @@ footer{
 .m-icon-group a span img{
     width:100%;
 }
+.m-gnb{
+    width:90%;
+    list-style-type:none;
+    margin:auto;
+    /* border:1px solid black; */
+    margin-top:30px;
+}
+.m-gnb>li{
+    width:100%;
+    background-color:lightblue;
+    margin-bottom:5px;
+}
+.m-gnb>li>a{
+    display:flex;
+    justify-content: space-between;
+    height:50px;
+    align-items:center;
+    padding: 0 20px;
+}
 @media screen and (min-width: 900px){
     /* 900px ~ 1199px*/
 }
