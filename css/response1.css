@@ -180,6 +180,26 @@ footer{
     align-items:center;
     padding: 0 20px;
 }
+.m-banner{
+    width:100%;
+    /* border:1px solid black; */
+    margin-top:30px;
+}
+.m-banner a{
+    display:block;
+    width:90%;
+    /* border:1px solid black; */
+    margin:auto;
+    margin-bottom:10px;
+}
+.m-banner a img{
+    width:100%;
+}
+.m-content{
+    overflow:auto;
+    left:-100%;
+    transition: 0.5s;
+}
 @media screen and (min-width: 900px){
     /* 900px ~ 1199px*/
 }
