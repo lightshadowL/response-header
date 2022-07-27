@@ -200,6 +200,21 @@ footer{
     left:-100%;
     transition: 0.5s;
 }
+header{
+    position:relative;
+}
+#search{
+    width:100%;
+    position:absolute;
+    bottom:-20px;
+    left:0;  
+    display:none;
+}
+#search>div{
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
 @media screen and (min-width: 900px){
     /* 900px ~ 1199px*/
 }

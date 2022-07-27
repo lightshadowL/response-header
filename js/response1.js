@@ -12,4 +12,11 @@ $(document).ready(function(){
             "left":"-100%"
         });
     });
+    $("#s-bt").click(function(){
+        $("#search").toggle()
+        
+    });
+    
+    
+
 });
