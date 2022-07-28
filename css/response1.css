@@ -276,6 +276,7 @@ header{
         height:50px;
         margin-top:40px;
         display:block;
+        position:relative;
     }
     .main-nav{
         width:100%;
@@ -303,6 +304,84 @@ header{
         align-items: center;
         border-radius:10px;
     }
+    .drop-wrap{
+        width:100%;
+        height:200px;
+        background-color:white;
+        border-bottom:1px solid #ddd;
+        position:absolute;
+        top:50px;
+        left:0;
+        height:0;
+        overflow:hidden;
+        transition:0.5s;
+    }
+    .main-nav>li:hover .drop-wrap{
+        height:200px;
+    }
+    .main-nav>li:hover .link-hover{
+        background-color:orange;
+    }
+    .drop-contents{
+        width:100%;
+        height:100%;
+        background-color:#ccc;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .drop-photo{
+        width:180px;
+        height:180px;
+        /* border:1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .drop-photo img{
+        width:80%;
+        border-radius: 50%;;
+    }
+    .drop-text{
+        width:30%;
+        height:80%;
+        /* border:1px solid black; */
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        line-height:200%;
+        border-left:1px dashed black;
+        border-right:1px dashed black;
+    }
+    .drop-menu{
+        width:50%;
+        height:100%;
+        /* border:1px solid black; */
+        display:flex;
+        justify-content: space-around;
+    }
+    .drop{
+        width:200px;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .drop a{
+        display:block;
+        width:100%;
+        height:40px;
+        /* background-color: yellow; */
+        display:flex;
+        align-items: center;
+        padding-left:10px;
+        margin-top:5px;
+        color:darkorange;
+        font-weight: bold;
+    }
+    .drop a:hover{
+        background-color:lightblue;
+    }
 }
 @media screen and (min-width:1200px){
     /* 1200px ~ 1599px*/
@@ -310,6 +389,10 @@ header{
 @media screen and (min-width:1600px){
     /* 1600px ~ */
     .main-nav{
+        max-width:1600px;
+        margin:auto;
+    }
+    .drop-contents{
         max-width:1600px;
         margin:auto;
     }
