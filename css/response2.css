@@ -264,6 +264,7 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
+        position:relative;
     }
     .main-nav>li>a{
         width:90%;
@@ -275,6 +276,35 @@ header{
         display:flex;
         justify-content: center;
         align-items: center;
+    }
+    .drop-down{
+        position:absolute;
+        top:50px;
+        left:0;
+        width:100%;
+        background-color:black;
+        display:flex;
+        flex-direction: column;
+        padding:0 5px;
+        height:0;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .main-nav>li:hover .drop-down{
+        height:160px;
+    }
+    .main-nav>li:hover .link-hover{
+        background-color:orange;
+    }
+    .drop-down a{
+        color:white;
+        width:100%;
+        height:40px;
+        padding:10px 5px;
+        border-bottom:1px dashed white;
+    }
+    .drop-down a:last-child{
+        border-bottom:none;
     }
     .d-icon{
         width:20%;
