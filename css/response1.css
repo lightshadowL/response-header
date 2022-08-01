@@ -251,7 +251,37 @@ header{
         /* 포토샵 눈아이콘을 껐을 때 */
     }
 }
-
+.main-banner{
+    width:90%;
+    height:700px;
+    border:1px solid black;
+    margin:50px auto;
+    background-image:url(../images/room1.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.main-banner>div{
+    display:flex;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.main-banner>div h3{
+    margin-top:20px;
+    margin-bottom:20px;
+    font-size:2em;
+}
+.main-banner>div p{
+    width:90%;
+    line-height:200%;
+    font-size:1.2em;
+}
 @media screen and (min-width: 916px){
     /* 916px ~ 1199px*/
     #m-nav{
