@@ -298,10 +298,51 @@
                     <div class="swiper-button-prev"></div>
                 </div>
             </div>
+            <div class="slider-group2">
+                <!-- Swiper -->
+                <div class="swiper s-auto">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/room1.jpg" alt="room1" class="m-s">
+                            <img src="images/slide1.jpg" alt="slide1" class="d-s">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/room4.jpg" alt="room4" class="m-s">
+                            <img src="images/slide2.jpg" alt="slide1" class="d-s">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/room5.jpg" alt="room5" class="m-s">
+                            <img src="images/slide3.jpg" alt="slide1" class="d-s">
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </div>
         <footer>푸터</footer>
         <script>
             var swiper = new Swiper(".mySwiper", {
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+          <script>
+            var swiper = new Swiper(".s-auto", {
+              spaceBetween: 30,
+              centeredSlides: true,
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
               navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
