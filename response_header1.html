@@ -12,8 +12,15 @@
         <meta property="og:image" content="images/logo.png">
         <meta property="og:url" content="">
         <title>Just 쇼핑몰</title>
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <link rel="shortcut icon" href="images/favicon.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <link rel="stylesheet" href="css/response1.css">
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/response1.js"></script>
@@ -272,8 +279,34 @@
                 </div>
                 
             </div>
+            <div class="slider-group1">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/room2.jpg" alt="room2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/room2.jpg" alt="room2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/room2.jpg" alt="room2">
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
         </div>
         <footer>푸터</footer>
-    
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
     </body>
 </html>
