@@ -426,7 +426,30 @@ header{
     margin:30px auto;
     display:block;
 }
+.gallery{
+    width:90%;
+    /* border:1px solid black; */
+    margin:30px auto;
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.gallery-thum{
+    width:100%;
+    /* border:1px solid black; */
+    
+}
+.gallery-thum a{
+    display:block;
+    padding:5px;
+}
+.gallery-thum img{
+    width:100%;
+}
 @media screen and (min-width:768px){
+    .gallery-thum{
+        width:50%;
+    }
     .thum{
         width:23%;
     }
@@ -474,7 +497,9 @@ header{
 }
 @media screen and (min-width: 916px){
     /* 916px ~ 1199px*/
-    
+    .gallery-thum{
+        width:25%;
+    }
     #m-nav{
         display:none;
     }
