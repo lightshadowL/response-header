@@ -345,7 +345,38 @@ header{
     width:20px;
     height:20px;
   }
+  .box-wrap{
+    width:80%;
+    /* border:1px solid black; */
+    margin:30px auto;
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+  }
+  .box{
+    width:50%;
+    /* border:1px solid black; */
+    padding:5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box img{
+    width:100%;
+  }
+  .title{
+    width:100%;
+    justify-content: left;
+    background-color:#dddddd;
+  }
+
 @media screen and (min-width:768px){
+    .box{
+        width:20%;
+    }
+    .title{
+        justify-content: center;
+    }
     .main-banner{
         height:300px;
     }
