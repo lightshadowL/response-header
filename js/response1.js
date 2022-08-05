@@ -17,6 +17,8 @@ $(document).ready(function(){
         
     });
     
-    
-
+    $(".thum-wrap .thum:gt(3)").hide();
+    $(".more").click(function(){
+        $(".thum-wrap .thum:gt(3)").fadeToggle();
+    });
 });
