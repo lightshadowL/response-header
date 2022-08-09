@@ -42,4 +42,33 @@ $(document).ready(function(){
         }
         
     });
+
+    // 열기닫기 버튼을 클릭하면
+    // form의 너비를 200px
+    // 열기닫기 버튼의 자신을 닫기 변경
+    // 다시 열기 닫기 버튼을 클리하면
+    //  form의 너비를 0
+    // 열기닫기 버튼의 자신을 검색 아이콘으로 변경
+    var boolBtn=true;
+    $(".btn").click(function(){
+        if(/*조건*/ boolBtn){
+            // 조건이 만족하면(참,true)
+            $("#d-search").css({
+                "width":210
+            })
+            $(this).html("<i class='fa fa-close'></i>")
+            boolBtn=false;
+        }else{
+            // 조건이 만족하지 하지 않으면(거짓, false)
+            $("#d-search").css({
+                "width":0
+            })
+            $(this).html("<i class='fa fa-search'></i>")
+            boolBtn=true;
+        }
+        
+
+    });
+
+
 });

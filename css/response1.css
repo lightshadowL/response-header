@@ -537,10 +537,38 @@ header{
     .d-icon a img{
         width:30%;
     }
-    #d-search{
+    .d-s-w{
         display:flex;
-        justify-content: center;
+        justify-content: right;
         margin-top:10px;
+    }
+    #d-search{
+        width:200px;
+        display:flex;
+        justify-content: right;
+        margin-right:5px;
+        width:0;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    #d-search button{
+        padding:5px;
+    }
+    input[name=search]{
+        padding:5px;
+        border:1px solid black;
+        outline:none;
+    }
+    input[name=search]:focus{
+        outline:none;
+        background-color:orange;
+    }
+    .btn{
+        background-color:black;
+        color:white;
+        padding:5px;
+        width:30px;
+        height:30px;
     }
     
 
