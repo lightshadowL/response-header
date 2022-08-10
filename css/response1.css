@@ -197,7 +197,7 @@ footer{
 }
 .m-content{
     overflow:auto;
-    left:-100%;
+    left:0;
     transition: 0.5s;
 }
 header{
@@ -446,6 +446,34 @@ header{
 .gallery-thum img{
     width:100%;
 }
+.drop{
+    width:100%;
+    background-color:pink;
+    display:none;
+   
+}
+.drop a{
+    display:block;
+    height:50px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-indent:30px;
+    padding-top:10px;
+}
+.drop a hr{
+    width:90%;
+    margin:0 auto;
+    margin-top:15px;
+    border:none;
+    height:1px;
+    border-bottom:1px dashed black;
+}
+.drop a:last-child{
+    padding:0;
+}
+
 @media screen and (min-width:768px){
     .gallery-thum{
         width:50%;

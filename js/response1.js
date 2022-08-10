@@ -70,5 +70,26 @@ $(document).ready(function(){
 
     });
 
+    // 네비의 li을 클릭한다ㅏ
+    $(".m-gnb>li").click(function(){
+        // 현재 li의 drop이 표시되어 있지 않으면 표시를 하고(참)
+        // 현재 li의 drop이 표시되어 있다면 현재li의 drop은 숨겨라(거짓)
+        if( $(this).find(".drop").is(":hidden") ){
+            // 표시
+            // 모든 drop은 위로 올리고 
+            $(".m-gnb>li .drop").slideUp();
+            $(".m-gnb>li span").html('<i class="fa fa-chevron-right"></i>')
+            // 현재 클릭한 li의 drop만 내려오도록 한다.
+            $(this).find(".drop").slideDown();
+            // 현재 li의 오른쪽 방향 아이콘을 아래 아이콘으로 변경
+            $(this).find("span").html('<i class="fa fa-chevron-down"></i>')
+        }else{
+            //숨겨야 한다.
+            $(".m-gnb>li .drop").slideUp();
+            $(".m-gnb>li span").html('<i class="fa fa-chevron-right"></i>')
+        }
+        
+    });
+
 
 });
