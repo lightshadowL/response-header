@@ -125,5 +125,15 @@ $(document).ready(function(){
             })
         }
     });
+    // 슬라이딩요소 + 스크롤바의 탑->움직일 위치
+    var sMove=parseInt( $(".s-move").css("top") );
+    console.log("슬라이딩 요소의 탑 위치"+sMove)
+    // 클래스가 s-move의 css의 탑의 값을 sMove에 저장한다
+    $(window).scroll(function(){
+        var sTop=$(window).scrollTop();
+        $(".s-move").css({
+            top:sMove+sTop
+        })
+    });
 
 });

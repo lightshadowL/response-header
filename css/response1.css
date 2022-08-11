@@ -473,7 +473,24 @@ header{
 .drop a:last-child{
     padding:0;
 }
-
+#section-wrap{
+    position:relative;
+}
+.s-move{
+    position:absolute;
+    right:0;
+    top:300px;
+    z-index:99999;
+    width:100px;
+    background-color:white;
+    transition:0.5s;
+}
+.s-move>a{
+    padding:10px;
+    background-color:black;
+    color:white;
+    display:block;
+}
 @media screen and (min-width:768px){
     .gallery-thum{
         width:50%;
