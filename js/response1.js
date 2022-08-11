@@ -90,6 +90,40 @@ $(document).ready(function(){
         }
         
     });
+    // 스크롤을 했을 때 특정위치에서 헤더를 고정한다.
+    /* $(window).scroll(function(){
+        var sTop=$(window).scrollTop();
+        // console.log("스크롤바의 탑 : "+sTop)
+        if(sTop>200){
+            //스크롤바의 탑의 값이 200보다 크면 동작을 실행
+            $("header").css({
+                "position":"fixed",
 
+            })
+        }else{
+            //스크롤바의 탑의 값이 200이하면 동작을 실행
+            $("header").css({
+                "position":"relative",
+                
+            })
+        }
+    }); */
+
+    // 스크롤을 했을 때 특정위치에서 네비를 고정
+    $(window).scroll(function(){
+        var sTop=$(window).scrollTop();
+        console.log("스크롤바의탑: "+sTop)
+        if(sTop>200){
+            $("#d-nav").css({
+                position:"fixed",
+                "margin-top":0
+            })
+        }else{
+            $("#d-nav").css({
+                position:"relative",
+                "margin-top":"40px"
+            })
+        }
+    });
 
 });

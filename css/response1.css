@@ -197,7 +197,7 @@ footer{
 }
 .m-content{
     overflow:auto;
-    left:0;
+    left:-100%;
     transition: 0.5s;
 }
 header{
@@ -539,6 +539,13 @@ header{
         height:150px;
         flex-direction:column;
         background-color:white;
+        
+        /* position:fixed; */
+        /* z-index:9999;
+        top:0; */
+    }
+    #section-wrap{
+        /* padding-top:150px; */
     }
     .d-icon-search{
         position:absolute;
@@ -610,6 +617,8 @@ header{
         margin-top:40px;
         display:block;
         position:relative;
+        top:0;
+        z-index:9999;
     }
     .main-nav{
         width:100%;
