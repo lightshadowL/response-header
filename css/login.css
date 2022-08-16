@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+.login-title{
+    text-align:center;
+    margin:50px 0;
+}
+.login-form{
+    /* border:1px solid black; */
+    width:80%;
+    margin:auto;
+    margin-bottom:50px;
+}
+.login-form>div{
+    width:100%;
+    height:50px;
+    border:1px solid black;
+    margin:10px 0;
+    display: flex;
+}
+.login-form>div:nth-child(5),
+.login-form>div:last-child{
+    height:auto;
+}
+.id-wrap span{
+    width:50px;
+    height: 100%;
+    /* border: 1px solid black; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.id-wrap span img{
+    width:60%;
+}
+.id-wrap input[name=id]{
+    width:100%;
+    border:none;
+    outline:none;
+}
+.id-wrap input[name=id]:focus{
+    background-color:#eee;
+}
+.id-wrap{
+    border:2px solid orange !important;
+    border-radius:5px;
+}
+.psw-wrap{
+    border:2px solid orange !important;
+    border-radius: 5px;
+}
+.psw-wrap span{
+    width:50px;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.psw-wrap span img{
+    width:60%;
+}
+.psw-wrap input[name=psw]{
+    width:100%;
+    border: none;
+    outline:none;
+}
+.save-check{
+    border:none !important;
+    align-items: center;
+}
+.save-check input[id=chk1]{
+    width:30px;
+    height:30px;
+    display:none;
+}
+.save-check input[id=chk1]+label{
+    width:20px;
+    height:20px;
+    border:2px solid orange;
+    border-radius: 50%;
+    margin:0 10px;
+    
+}
+.save-check input[id=chk1]:checked+label{
+    background:url(../images/icon_checkbox.png) orange center;
+    background-size:100%;
+}
