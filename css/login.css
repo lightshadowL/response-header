@@ -84,3 +84,65 @@
     background:url(../images/icon_checkbox.png) orange center;
     background-size:100%;
 }
+.login-submit{
+    border:none !important;
+}
+.login-submit input[type=submit]{
+    width:100%;
+    border:none;
+    outline:none;
+    background-color:orange;
+    color:white;
+    font-size:20px;
+    font-weight: bold;
+}
+.m-f-p{
+    flex-direction: column;
+    border:none !important;
+}
+.m-f-p a{
+    width:100%;
+    height:40px;
+    background-color:#ddd;
+    margin:5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sns-wrap{
+    flex-direction: column;
+    border:none !important;
+}
+.sns-wrap a{
+    width:100%;
+    height:40px;
+    background-color:#bbb;
+    margin:5px 0;
+    text-align: center;
+
+}
+.sns-wrap a img{
+    height:100%;
+}
+.sns-wrap a:first-child{
+    background-color:#03c75a;
+}
+.sns-wrap a:nth-child(2){
+    background-color:#fee500;
+}
+.sns-wrap a:last-child{
+    background-color:#3c66c4;
+}
+@media screen and (min-width:768px){
+    .login-form{
+        max-width:600px;
+    }
+    .m-f-p{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .m-f-p a{
+        width:30%;
+    }
+    
+}
