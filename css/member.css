@@ -65,3 +65,113 @@
     padding:10px;
     border-radius: 5px;
 }
+.member-wrap span{
+    font-weight: bold;;
+}
+.member-birth{
+    border:none !important;
+}
+.member-birth>div{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+}
+.member-birth>div input,
+.member-birth>div select{
+    width:32%;
+    height:40px;
+    padding:10px;
+}
+.member-jen{
+    border:none !important;
+}
+.member-jen div{
+    margin:5px 0;
+}
+.member-email{
+    border:none !important;
+}
+.member-email>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.member-email>div input,
+.member-email>div select{
+    width:45%;
+    height:40px;
+}
+.member-phone{
+    border:none !important;
+}
+.member-phone select,
+.member-phone input[name=phone-check]{
+    width:100%;
+    height:40px;
+    padding:10px;
+
+}
+.member-phone>div{
+    display: flex;
+    justify-content: space-between;
+    margin:5px 0;
+}
+.member-phone>div input[type=text]{
+    width:75%;
+    height:40px;
+    padding:10px;
+}
+.member-phone>div input[type=submit]{
+    width:23%;
+    height:40px;
+    background-color:orange;
+    border:none;
+    color:white;
+}
+.member-term{
+    border:none !important;
+}
+.member-term .term-text{
+    width:100%;
+    height:70px;
+    border:2px solid black;
+    overflow:auto;
+
+}
+.member-term>.term-check{
+    width:100%;
+    display:flex;
+    margin:5px 0;
+    align-items: center;
+}
+.member-term input[id=term-check]+label{
+    width:30px;
+    height:30px;
+    border:2px solid orange;
+    margin-right:10px;
+}
+.member-term input[id=term-check]:checked+label{
+    background:url(../images/icon_checkbox.png) orange center;
+    background-size:100%;
+    background-repeat:no-repeat
+}
+.member-term input[id=term-check]{
+    display:none;
+}
+.member-submit{
+    border:none !important;
+}
+.member-submit input[type=submit]{
+    width:100%;
+    height:40px;
+    background-color:orange;
+    border:none;
+    color:white;
+    font-weight: bold;
+}
+
+@media screen and (min-width:768px){
+    .member-wrap{
+        max-width:600px;
+    }
+}

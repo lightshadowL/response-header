@@ -321,22 +321,63 @@
                     <input type="text" name="member-name" id="member-name" maxlength="8">
                 </div>
                 <div class="member-birth">
-                    생년월일
+                    <span>생년월일</span>
+                    <div>
+                        <input type="text" name="year" maxlength="4" placeholder="년(4자)">
+                        <select class="month">
+                            <option value="">월</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <input type="text" name="day" maxlength="2" placeholder="일">
+                    </div>
                 </div>
                 <div class="member-jen">
-                    성별
+                    <span>성별</span>
+                    <div>
+                        <input type="radio" name="jen" value="mail">남성
+                        <input type="radio" name="jen" value="femail">여성
+                    </div>
                 </div>
                 <div class="member-email">
-                    본인확인 이메일
+                    <span>본인확인 이메일</span>
+                    <div>
+                        <input type="text" name="email">
+                        @
+                        <select class="email-select">
+                            <option value="">직접입력</option>
+                            <option value="naver.com">네이버</option>
+                            <option value="gmail.com">지메일</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="member-phone">
-                    휴대전화
+                    <span>휴대전화</span>
+                    <select class="phone-c">
+                        <option value="+82">대한민국 +82</option>
+                        <option value="+1">미국/캐나다</option>
+
+                    </select>
+                    <div>
+                        <input type="text" name="phone-num" maxlength="11" placeholder="'-'없이 숫자만 입력">
+                        <input type="submit" name="phone-m" value="인증번호받기">
+                    </div>
+                    <input type="text" name="phone-check" placeholder="인증번호 입력하세요">
                 </div>
                 <div class="member-term">
-                    이용약관
+                    <span>이용약관</span>
+                    <div class="term-check">
+                        <input type="checkbox" name="term-check" id="term-check">
+                        <label for="term-check"></label>
+                        <span>약관동의</span>
+                    </div>
+                    <div class="term-text">
+                        특히 카사노는 김민재에 대해 "그는 좋은 경기를 했다"면서 "그가 얼마나 큰 지 그와 싸우지 않는 게 낫다"고 농담 섞인 평가를 내렸다. 김민재는 첼시로 이적한 칼리두 쿨리발리의 대체자로 여겨지고 있다. 하지만 쿨리발리가 워낙 좋은 경기력을 남긴 터라 기대와 우려가 엇갈리고 있다. 하지만 데뷔전 활약을 통해 이런 우려를 일부 지울 수 있었다.
+                    </div>
                 </div>
                 <div class="member-submit">
-                    가입하기
+                    <input type="submit" name="trans" value="가입하기">
                 </div>
             </form>
         </div>
